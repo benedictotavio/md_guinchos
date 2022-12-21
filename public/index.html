@@ -21,6 +21,22 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  
+   <script>
+    (function () {
+      window.onload = function () {
+        new BlipChat()
+          .withAppKey('cm90ZWFkb3J0ZXN0ZTc5OmRkMmZlNWRhLWFjNjktNGQ0NS1iYWU5LWY3ZGQzZTMxOTYzYg==')
+          .withButton({ "color": "#2CC3D5", "icon": "" }) //select an icon from imgs file
+          .withCustomCommonUrl('https://chat.blip.ai/')
+          .build();
+        window.localStorage.clear();
+
+        // reseta a ultima conversa
+        //localStorage.removeItem('blipSdkUAccount')
+      }
+    })();
+  </script>
 
 </body>
 
