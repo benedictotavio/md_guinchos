@@ -1,0 +1,76 @@
+section#banner {
+    background-image: url("../imgs/banner.png");
+    /* The image used */
+    background-color: #cccccc;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 50vh;
+}
+
+section#banner h3,h4,h7 {
+    margin: auto 0 20px auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 13px;
+
+}
+section#banner h3.btn-number-wpp > a{
+    color: #FFF;
+    text-decoration: none;
+    margin: 10px 0 20px auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 2px 2px #25d366;
+}
+
+section#banner h3.btn-number-wpp > a:hover{
+    color: #25d366;
+    text-shadow: 1px 2px 2px #FFF;
+    transition: .45s;
+}
+
+section#banner div#menu-service ul svg {
+    font-size: 2.75em;
+    margin: 0.1em 0.8em;
+    cursor: pointer;
+}
+
+section#banner div#menu-service ul svg:hover {
+    transform: scale(1.15);
+    color: #76c6f8;
+}
+
+section#banner div.btn-wpp a{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+section#banner div.btn-wpp a:hover{
+    background-color: #FFF;
+}
+section#banner div.btn-wpp a svg{
+    margin: 5px;
+    transition: 0.25s;
+}
+section#banner div.btn-wpp a svg:hover{
+    color: #25d366;
+    transform: scale(1.15);
+}

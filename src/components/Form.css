@@ -1,0 +1,21 @@
+section#bg-form {
+    background: #870000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #870000, #190a05);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #740202, #190a05);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#bg-form>form {
+    background-color: aliceblue;
+    min-width: 50%;
+    border-radius: 5%;
+}
+
+section#bg-form>form input {
+    border-radius: 10%;
+}
