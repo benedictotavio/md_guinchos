@@ -1,17 +1,6 @@
 import React from 'react';
 import './Form.css'
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBInput,
-    MDBTextArea,
-    MDBFile
-}
-    from 'mdb-react-ui-kit';
+import { BsArrowRight } from 'react-icons/bs'
 
 const sendFormByEmail = (e) => {
     e.preventDefault()
@@ -20,39 +9,48 @@ const sendFormByEmail = (e) => {
 
 function App() {
     return (
-        <section id='bg-form'>
-            <form className='p-md-4' onSubmit={sendFormByEmail}>
-            <div className="form-group mb-3">
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Nome" />
-                </div>
-                <div className="form-group">
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email" />
-                </div>
-                <div className="form-group my-2">
-                    <label htmlFor="exampleFormControlSelect1">Selecione o serviço:</label>
-                    <select className="form-control" id="exampleFormControlSelect1">
-                        <option>Guinchos</option>
-                        <option>Transportes</option>
-                        <option>Outros</option>
-                    </select>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="exampleFormControlSelect2">Selecione a Região</label>
-                    <select multiple className="form-control" id="exampleFormControlSelect2">
-                        <option>Grande São Paulo</option>
-                        <option>Litoral</option>
-                        <option>Inteiror</option>
-                        <option>ABC</option>
-                    </select>
-                </div>
-                <div className="form-group py-md-3">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Mensagens'></textarea>
-                </div>
-                <div className='text-center'>
-                    <button className='btn btn-primary'>Enviar</button>
-                </div>
-            </form>
-        </section>
+        <div className="wrapper">
+            <div className="inner">
+                <form onSubmit={sendFormByEmail}>
+                    <h3>Fale Conosco</h3>
+                    <div className='row'>
+                        <div className='col-md-4'>
+                            <h6 className=''>Orçamento</h6>
+                        </div>
+                        <div className="col-md-8">
+                            <h6 className=''>Verifique Disponibilidade</h6>
+                        </div>
+                    </div>
+                    <div className='row mb-md-3'>
+                        <div className='col-md-7'>
+                            <h6 className=''>Fretes Terceirizados</h6>
+                        </div>
+                        <div className="col-md-5">
+                            <h6 className=''>Agendamento</h6>
+                        </div>
+                    </div>
+                    <label className="form-group">
+                        <input type="text" className="form-control" required />
+                        <span>Nome</span>
+
+                    </label>
+                    <label className="form-group">
+                        <input type="text" className="form-control" required />
+                        <span for="">E-Mail</span>
+
+                    </label>
+                    <label className="form-group" >
+                        <textarea name="" id="" className="form-control" required></textarea>
+                        <span for="">Mensagem</span>
+                    </label>
+                    <button>Submit
+                        <i>
+                            <BsArrowRight />
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </div>
     )
 }
 
