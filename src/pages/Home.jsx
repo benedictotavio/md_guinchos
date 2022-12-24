@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import Carrousel from '../components/Carrousel'
 import MyMap from '../components/MyMap'
+import ContactZone from '../components/ContactZone'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Banner/>
         <Carrousel/>
         <MyMap/>
+        <ContactZone/>
         <Footer/>
     </div>
   )

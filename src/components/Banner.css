@@ -29,7 +29,7 @@ section#banner h3.btn-number-wpp > a{
     margin: 10px 0 20px auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    text-shadow: 1px 2px 2px #25d366;
+    text-shadow: 2.5px 2px 2.5px #25d366;
 }
 
 section#banner h3.btn-number-wpp > a:hover{
@@ -44,9 +44,8 @@ section#banner div#menu-service ul svg {
     cursor: pointer;
 }
 
-section#banner div#menu-service ul svg:hover {
+section#banner div#menu-service ul a svg:hover {
     transform: scale(1.15);
-    color: #76c6f8;
 }
 
 section#banner div.btn-wpp a{

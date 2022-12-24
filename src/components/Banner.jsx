@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Banner.css'
 import { BsWhatsapp } from 'react-icons/bs'
 import { FaMotorcycle, FaShuttleVan } from 'react-icons/fa'
@@ -18,16 +19,27 @@ const Banner = () => {
                 </div>
                 <div id='menu-service'>
                     <ul style={{ listStyleType: "none", display: "flex", justifyContent: "center" }}>
-                        <li><FaShuttleVan /></li>
-                        <li><FaMotorcycle /></li>
-                        <li><BsTruckFlatbed /></li>
-                        <li><GiCarBattery /></li>
+                        <li>
+                            <Link to='/services'>
+                                <FaShuttleVan color='white' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/services'>
+                                <FaMotorcycle color='white' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/services'>
+                                <BsTruckFlatbed color='white' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/services'>
+                                <GiCarBattery color='white' />
+                            </Link>
+                        </li>
                     </ul>
-                </div>
-                <div className="btn-wpp">
-                    <a href="http://wa.me/5511971181829" target="_blank" rel='noopener noreferrer'>
-                        <BsWhatsapp />
-                    </a>
                 </div>
             </div>
         </section>

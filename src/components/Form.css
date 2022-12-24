@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,100&display=swap');
 
-* {
+section#form{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ div.inner a:hover {
     outline: none; 
 }
 
-.wrapper {
+section#form .wrapper {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ div.inner a:hover {
     background-size: cover;
 }
 
-.inner {
+section#form .inner {
     max-width: 758px;
     margin: auto;
     background: #39459b;
@@ -66,11 +66,11 @@ div.inner a:hover {
     -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-textarea {
+section#form textarea {
     resize: none;
 }
 
-div.inner h3 {
+section#form div.inner h3 {
     text-transform: uppercase;
     font-size: 45px;
     text-align: center;
@@ -82,24 +82,24 @@ div.inner h3 {
     font-weight: 700;
 }
 
-div.inner p {
+section#form div.inner p {
     text-align: center;
     padding: 0 10px;
     margin-bottom: 55px;
     line-height: 1.8;
 }
 
-div.inner .form-group {
+section#form div.inner .form-group {
     position: relative;
     display: block;
     margin-bottom: 48px;
 }
 
-div.inner div.row{
+section#form div.inner div.row{
     color: #fff;  
 }
 
-div.inner div.row h6{
+section#form div.inner div.row h6{
     text-align: center;
     background: #4855b2;
     padding: 10px;
@@ -107,7 +107,7 @@ div.inner div.row h6{
     margin: 2px;
 }
 
-div.inner .form-group span {
+section#form div.inner .form-group span {
     font-size: 15px;
     color: #00ade6;
     position: absolute;
@@ -117,7 +117,7 @@ div.inner .form-group span {
     cursor: text;
 }
 
-div.inner .form-control {
+section#form div.inner .form-control {
     border: none;
     border-bottom: 2px solid #00ade6;
     display: block;
@@ -133,22 +133,22 @@ div.inner .form-control:valid {
     border-bottom: 2px solid #fff;
 }
 
-.form-control:focus+span,
+section#form .form-control:focus+span,
 .form-control:valid+span {
     transform: translateY(-22px) scale(0.8);
 }
 
-div.inner .form-control:focus+span+.border,
-div.inner .form-control:valid+span+.border {
+section#form div.inner .form-control:focus+span+.border,
+section#form div.inner .form-control:valid+span+.border {
     transform: scaleX(1);
 }
 
-div.inner textarea.form-control {
+section#form div.inner textarea.form-control {
     min-height: 10vh;
     padding: 15px auto;
 }
 
-div.inner button {
+section#form div.inner button {
     border: none;
     width: 162px;
     height: 51px;
@@ -173,7 +173,7 @@ div.inner button {
     transition-duration: 0.3s;
 }
 
-div.inner button i {
+section#form div.inner button i {
     margin-left: 10px;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -185,7 +185,7 @@ div.inner button i {
     transition-timing-function: ease-out;
 }
 
-div.inner button:before {
+section#form div.inner button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -206,31 +206,31 @@ div.inner button:before {
     transition-timing-function: ease-out;
 }
 
-div.inner button:hover {
+section#form div.inner button:hover {
     border-color: transparent;
 }
 
-div.inner button:hover:before {
+section#form div.inner button:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-div.inner button:hover i {
+section#form div.inner button:hover i {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
 }
 
 @media (max-width: 767px) {
-    div.inner h3 {
+    section#form div.inner h3 {
         font-size: 38px;
     }
 
-    p {
+    section#form p {
         font-size: 14px;
         padding: 0;
     }
 
-    .inner {
+    section#form .inner {
         padding: 27px 20px 37px;
         border: none;
         box-shadow: none;
@@ -240,7 +240,7 @@ div.inner button:hover i {
         -o-box-shadow: none;
     }
 
-    .wrapper {
+    section#form .wrapper {
         background: #39459b;
         border: 10px solid #0d99d7;
     }

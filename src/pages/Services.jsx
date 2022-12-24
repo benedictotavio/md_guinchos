@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
+import ContactZone from '../components/ContactZone'
 import ContainerServices from '../components/ContainerServices'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -10,29 +11,25 @@ const Services = () => {
         <>
             <Navbar />
             <Banner />
-
-            <ContainerServices
-                direction='left'
-                foto={foto9}
-                title='Serviços utilitários'
-                text='ekfwef ewfjweoijfjowe wefjewijfjowef wefjewifojwie' />
-
-            <ContainerServices
-                foto={foto9}
-                title='Serviços utilitários'
-                text='ekfwef ewfjweoijfjowe wefjewijfjowef wefjewifojwie' />
-
-            <ContainerServices
-                direction='left'
-                foto={foto9}
-                title='Serviços utilitários'
-                text='ekfwef ewfjweoijfjowe wefjewijfjowef wefjewifojwie' />
-
-            <ContainerServices
-                foto={foto9}
-                title='Serviços utilitários'
-                text='ekfwef ewfjweoijfjowe wefjewijfjowef wefjewifojwie' />
-
+            <div className='py-3'>
+                <ContainerServices
+                    photoLeft={foto9}
+                    titleLeft='Utilitários'
+                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    photoRight={foto9}
+                    titleRight='Utilitários'
+                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                />
+                <ContainerServices
+                    photoLeft={foto9}
+                    titleLeft='Utilitários'
+                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    photoRight={foto9}
+                    titleRight='Utilitários'
+                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                />
+            </div>
+            <ContactZone/>
             <Footer />
         </>
     )

@@ -1,25 +1,16 @@
 import React from 'react'
 import Flags from '../imgs/flags.png'
-import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa'
+import SocialIcons from './SocialIcons'
 
 const Footer = () => {
     return (
         <>
-            <footer className="footer-08 p-md-2">
+            <footer className="footer-08 py-md-4" style={{backgroundColor:"whitesmoke"}}>
                 <div className="container-fluid px-lg-5">
                     <div className="row">
                         <div className="col-md-8 py-5">
                             <div className="row">
-                                <div className="col-md-4 mb-md-0 mb-4">
-                                    <h2 className="footer-heading">Sobre Nos</h2>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                    <ul className="d-flex">
-                                        <li className="list-group-item"><FaFacebookF color='#76c6f8' /></li>
-                                        <li className="list-group-item"><FaInstagram color='#76c6f8' /></li>
-                                        <li className="list-group-item"><FaTwitter color='#76c6f8' /></li>
-                                    </ul>
-                                </div>
-                                <div className="col-md-8">
+                                <div className="col-md-12">
                                     <div className="row">
                                         <div className="col-md-6 col-lg-10">
                                             <div className="row">
@@ -48,13 +39,13 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row mt-md-5">
-                                <div className="col-md-12 m-3">
+                           
+                                <div className="col-md-12 mt-2">
                                    <img src={Flags} alt="Bandeiras aceitas!" style={{maxWidth:'100%',margin:'1% auto'}}/>
                                 </div>
-                            </div>
+                            
                         </div>
-                        <div className="col-md-4 py-md-5 py-4 pl-lg-5" style={{ backgroundColor: "#76c6f8" }}>
+                        <div className="col-md-4 py-md-5 py-4 pl-lg-5" style={{ backgroundColor: "#76c6f8",height:'50%',borderRadius:"10px"}}>
                             <div>
                                 <h2 className="footer-heading footer-heading-white text-white text-center">Fale Conosco</h2>
                             </div>
@@ -75,6 +66,11 @@ const Footer = () => {
                                     <button type="submit" className="btn btn-primary form-control my-2 submit">Send</button>
                                 </div>
                             </form>
+                        </div>
+                        <div className='col-md-12 d-flex justify-content-center'>
+                            <div>
+                               <SocialIcons/>
+                            </div>
                         </div>
                     </div>
                 </div>
