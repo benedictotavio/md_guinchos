@@ -37,12 +37,12 @@ function App() {
                         </label>
                         <label className="form-group">
                             <input type="text" className="form-control" required />
-                            <span for="">E-Mail</span>
+                            <span htmlFor="">E-Mail</span>
 
                         </label>
                         <label className="form-group" >
                             <textarea name="" id="" className="form-control" required></textarea>
-                            <span for="">Mensagem</span>
+                            <span htmlFor="">Mensagem</span>
                         </label>
                         <button>Submit
                             <i>

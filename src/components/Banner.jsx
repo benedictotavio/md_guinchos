@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Banner.css'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -6,9 +6,10 @@ import { FaMotorcycle, FaShuttleVan } from 'react-icons/fa'
 import { BsTruckFlatbed } from 'react-icons/bs'
 import { GiCarBattery } from 'react-icons/gi'
 
-const Banner = () => {
+const Banner = ({imgBack}) => {
+
     return (
-        <section id='banner' style={{ textAlign: "center", color: "whitesmoke" }}>
+        <section id='banner' style={{ textAlign: "center", color: "whitesmoke", backgroundImage:`url(${imgBack})` }}>
             <div className='container-fluid w-100'>
                 <div className='p-1'>
                     <h4>GUINCHOS SP 24 HORAS | 7 DIAS DA SEMANA</h4>

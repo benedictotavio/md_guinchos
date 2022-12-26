@@ -1,19 +1,18 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import ContactZone from '../components/ContactZone'
-import ContainerServices from '../components/ContainerServices'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import imgBanner from '../imgs/banner_express.png'
+import ContainerServices from '../components/ContainerServices'
 import foto9 from '../galeria-fotos/foto-9.png'
-import imgBanner from '../imgs/banner.png'
 
-const Services = () => {
-    return (
-        <>
-            <Navbar />
-            <Banner imgBack={imgBanner}/>
-            <div className='py-3'>
-                <ContainerServices
+const Express = () => {
+  return (
+    <>
+    <Navbar/>
+    <Banner imgBack={imgBanner}/>
+    <ContainerServices
                     photoLeft={foto9}
                     titleLeft='Utilitários'
                     textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
@@ -29,11 +28,10 @@ const Services = () => {
                     titleRight='Utilitários'
                     textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
                 />
-            </div>
-            <ContactZone/>
-            <Footer />
-        </>
-    )
+    <ContactZone/>
+    <Footer/>
+    </>
+  )
 }
 
-export default Services
+export default Express

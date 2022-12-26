@@ -27,10 +27,10 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/services">Serviços</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/contact' className="nav-link" href="#">Fale Conosco</Link>
+                                <Link to='/contact' className="nav-link">Fale Conosco</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link disabled">Transporte de Cargas</Link>
+                                <Link className="nav-link" to='/express'>Transporte de Cargas</Link>
                             </li>
                         </ul>
                     </div>

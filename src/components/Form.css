@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,100&display=swap');
 
-section#form{
+section#form {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-input,
-textarea,
-select,
-button {
+section#form input,
+section#form textarea,
+section#form select,
+section#form button {
     font-family: "Montserrat-Regular", sans-serif;
     color: #fff;
     font-size: 15px;
+    background-color: hsla(0, 0%, 100%, 0);
 }
 
-div.inner
-p,
+div.inner p,
 h1,
 h2,
 h3,
@@ -41,7 +41,7 @@ div.inner a:hover {
 }
 
 :focus {
-    outline: none; 
+    outline: none;
 }
 
 section#form .wrapper {
@@ -95,11 +95,11 @@ section#form div.inner .form-group {
     margin-bottom: 48px;
 }
 
-section#form div.inner div.row{
-    color: #fff;  
+section#form div.inner div.row {
+    color: #fff;
 }
 
-section#form div.inner div.row h6{
+section#form div.inner div.row h6 {
     text-align: center;
     background: #4855b2;
     padding: 10px;

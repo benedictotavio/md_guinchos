@@ -11,6 +11,7 @@ section#social-icons{
     align-items:center;
     justify-content:center;
 }
+
 section#social-icons .container{
     display:flex;
     gap:10px
@@ -28,7 +29,7 @@ section#social-icons .icon{
     justify-content: center;
     align-items: center;
 }
-section#social-icons .icon::after, .icon::before{
+section#social-icons .icon::after,section#social-icons .icon::before{
     content:" ";
     position:absolute;
     top:50%;
