@@ -14,8 +14,18 @@ div#contacts>.wrapper a:nth-child(1) {
     background-color: green;
 }
 
+div#contacts>.wrapper a:nth-child(1):hover{
+    background-color: #fff;
+    color: green;
+}
+
 div#contacts>.wrapper a:nth-child(2) {
     background-color: blue;
+}
+
+div#contacts>.wrapper a:nth-child(2):hover{
+    background-color: #fff;
+    color: blue;
 }
 
 
@@ -43,11 +53,20 @@ div#contacts > .wrapper a:hover:nth-child(3) {
     }
 }
 
+@keyframes FadeOutEmail {
+    0% {
+        transform:translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
 .hide {
     position: absolute;
     bottom: 0px;
     z-index: -1;
-    transition: all 0.3s;
 }
 
 div#contacts>.wrapper a{

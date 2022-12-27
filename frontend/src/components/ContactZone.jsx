@@ -6,12 +6,6 @@ import {FiMessageCircle} from 'react-icons/fi'
 const ContactZone = () => {
 
     const [hide,setHide] = useState('')
- 
-        // const close_button = document.querySelector(".close-button");
-        // const social_buttons = document.querySelectorAll(".social");
-        // social_buttons.forEach(function (buttons) {
-        //     buttons.classList.toggle('hide');
-        // });
 
         const handleClick = event => {
             // 👇️ toggle isActive state on click

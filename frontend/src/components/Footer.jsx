@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Flags from '../imgs/flags.png'
 import SocialIcons from './SocialIcons'
 import FormModal from './FormModal'
@@ -12,6 +12,41 @@ import fotoService6 from '../galeria-fotos/foto-7.png'
 import { GiDeadWood, GiBrickPile, GiRecycle } from 'react-icons/gi'
 
 const Footer = ({ form }) => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [msg, setMsg] = useState('')
+    const [tel, setTel] = useState('')
+
+    const formSubmit = async (e) => {
+        e.preventDefault()
+        console.log(name)
+        console.log(email)
+        console.log(msg)
+
+        const _data = {
+            name,
+            email,
+            tel,
+            msg,
+          }
+          
+          await fetch('/api/forma', {
+            method: "POST",
+            body: JSON.stringify(_data),
+            headers: {"Content-type": "application/json; charset=UTF-8"}
+          })
+          .then(response => response.json()) 
+          .catch(err => console.log(err))
+
+          setInterval(()=>{
+            setName('')
+            setEmail('')
+            setTel('')
+            setMsg('')
+          },800)
+    }
+
     return (
         <>
             <footer className="footer-08 py-md-4" style={{ backgroundColor: "whitesmoke" }}>
@@ -57,18 +92,25 @@ const Footer = ({ form }) => {
                             <div>
                                 <h2 className="footer-heading footer-heading-white text-white text-center">Fale Conosco</h2>
                             </div>
-                            <form action="#" className="contact-form" >
+                            <form action="#" className="contact-form" onSubmit={formSubmit}>
                                 <div className="form-group">
-                                    <input type="text" className="form-control my-2" placeholder="Nome" />
+                                    <input type="text" className="form-control my-2" placeholder="Nome" onChange={(e) => setName(e.target.value)} value={name}/>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control my-2" placeholder="Email" />
+                                    <input type="text" className="form-control my-2" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email}/>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control my-2" placeholder="Assunto" />
+                                    <input type="text" 
+                                    className="form-control my-2"
+                                    onChange={(e) => setTel(e.target.value)}
+                                    placeholder="Telefone" 
+                                    value={tel}/>
                                 </div>
                                 <div className="form-group">
-                                    <textarea name="" id="" cols="30" rows="3" className="form-control my-2" placeholder="Mensagem"></textarea>
+                                    <textarea name="" id="" cols="30" rows="3" className="form-control my-2" 
+                                    placeholder="Mensagem"
+                                    onChange={(e) => setMsg(e.target.value)}
+                                    value={msg}></textarea>
                                 </div>
                                 <div className="form-group">
                                     <button type="submit" className="btn btn-primary form-control my-2 submit">Enviar</button>

@@ -1,0 +1,23 @@
+div.btn-modal i > svg {
+    cursor: pointer;
+}
+
+section#banner div.btn-modal i > svg:hover {
+    animation: iconService 1.1s;
+}
+
+@keyframes iconService {
+   0%{
+    transform: rotate(-35deg);
+   }
+   70%{
+    transform: translateX(1px);
+    transition: 2s;
+   }
+}
+
+div.btn-modal i > svg:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: #fe3848;
+}

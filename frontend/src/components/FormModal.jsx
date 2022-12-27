@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Modal from 'react-modal';
-import { GrFormClose } from 'react-icons/gr'
-import {BsArrowRightCircle} from 'react-icons/bs'
+import { BsArrowRightCircle, BsWhatsapp } from 'react-icons/bs'
+import './FormModal.css'
 
 const customStyles = {
   content: {
@@ -15,8 +16,8 @@ const customStyles = {
     maxWidth: '70%',
     padding: '-20px!important',
     borderRadius: '4.5px',
-    display:'flex',
-    borderRadius:'10px'
+    display: 'flex',
+    borderRadius: '10px'
   },
 };
 
@@ -38,7 +39,7 @@ export default function FormModal({ icon, title, text, video, img }) {
 
   return (
     <>
-      <div className="col-md-4 d-flex justify-content-center">
+      <div className="btn-modal col-md-4 d-flex justify-content-center">
         <i onClick={openModal}>
           {icon}
         </i>
@@ -57,10 +58,23 @@ export default function FormModal({ icon, title, text, video, img }) {
           <div className='mt-md-5'>
             {text}
           </div>
-          <div className='mt-md-5'>
-            <button className='btn bg-primary text-white'>Wpp</button>
-            <button className='btn btn-secondary' onClick={closeModal}>Fechar</button>
-            <i><BsArrowRightCircle/></i>
+          <div className='mt-md-2 d-flex justify-content-around text-white'>
+            <div>
+              <button className='btn mx-md-1' style={{ backgroundColor: 'green' }}>
+                <a className='text-white' href="http://wa.me/5511971181829" target='_blank' style={{ textDecoration: 'none' }}>
+                    <BsWhatsapp/>
+                    WhatsApp
+                </a>
+              </button>
+              <button className='btn btn-secondary' onClick={closeModal}>Fechar</button>
+            </div>
+            <div className=' d-flex align-items-md-end'>
+              <i>
+                <Link to='/express'>
+                  <BsArrowRightCircle />
+                </Link>
+              </i>
+            </div>
           </div>
         </div>
       </Modal>

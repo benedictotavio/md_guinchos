@@ -1,10 +1,10 @@
 import React from 'react'
 import './ContainerServices.scss'
 
-const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRight, textRight }) => {
+const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRight, textRight, section }) => {
     return (
         <>
-            <section className="light">
+            <section id='container-services'>
                 <div className="container">
                     <article className="postcard light blue">
                         <a className="postcard__img_link" href="#">
@@ -25,7 +25,7 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                                 <li className="tag__item play blue">
                                     <a href="#">
                                         <i>
-                                            
+
                                         </i>
                                     </a>
                                 </li>

@@ -1,30 +1,41 @@
 import React, { useState } from 'react';
 import './Form.css'
 import { BsArrowRight } from 'react-icons/bs'
-import axios from 'axios'
 
 function App() {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [msg, setMsg] = useState('')
+    const [tel, setTel] = useState('')
 
-    const formSubmit = (e) => {
+    const formSubmit = async (e) => {
         e.preventDefault()
-        const data = {
-            name:name,
-            email:email,
-            msg:msg
-        }
+        console.log(name)
+        console.log(email)
+        console.log(msg)
 
-        axios.post('/api/forma', data).then((res) => {
-            setTimeout(() => {
-                setEmail('')
-                setName('')
-                setMsg('')
-            },2000)
+        const _data = {
+            name,
+            email,
+            tel,
+            msg,
+          }
+          
+          await fetch('/api/forma', {
+            method: "POST",
+            body: JSON.stringify(_data),
+            headers: {"Content-type": "application/json; charset=UTF-8"}
+          })
+          .then(response => response.json()) 
+          .catch(err => console.log(err))
 
-        }).catch(err => console.log(`Mensagem de Erro! ${err}`))
+          setInterval(()=>{
+            setName('')
+            setEmail('')
+            setTel('')
+            setMsg('')
+          },800)
     }
 
 
@@ -32,10 +43,10 @@ function App() {
     return (
         <section id="form">
             <div className="wrapper">
-                <div className="inner my-md-4" >
+                <div className="inner py-md-4" >
                     <form onSubmit={formSubmit} >
                         <h3>Fale Conosco</h3>
-                        <div className='row'>
+                        <div className='row py-md-2'>
                             <div className='col-md-4'>
                                 <h6 className=''>Orçamento</h6>
                             </div>
@@ -52,17 +63,21 @@ function App() {
                             </div>
                         </div>
                         <label className="form-group">
-                            <input type="text" className="form-control" required onChange={(e) => setName(e.target.value)} />
+                            <input type="text" className="form-control" required onChange={(e) => setName(e.target.value)}  value={name}  />
                             <span>Nome</span>
 
                         </label>
                         <label className="form-group">
-                            <input type="text" className="form-control" required onChange={(e) => setEmail(e.target.value)} />
+                            <input type="text" className="form-control" required onChange={(e) => setEmail(e.target.value)}  value={email}  />
                             <span htmlFor="">E-Mail</span>
 
                         </label>
+                        <label className="form-group">
+                            <input type="text" className="form-control" required onChange={(e) => setTel(e.target.value)}  value={tel}  />
+                            <span htmlFor="">Telefone</span>
+                        </label>
                         <label className="form-group" >
-                            <textarea name="" id="" className="form-control" required onChange={(e) => setMsg(e.target.value)}></textarea>
+                            <textarea name="" id="" className="form-control" required onChange={(e) => setMsg(e.target.value)}  value={msg} ></textarea>
                             <span htmlFor="">Mensagem</span>
                         </label>
                         <button>Submit

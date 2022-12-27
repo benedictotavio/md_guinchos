@@ -11,7 +11,7 @@ const Services = () => {
     return (
         <>
             <Navbar />
-            <Banner imgBack={imgBanner}/>
+            <Banner imgBack={imgBanner} />
             <div className='py-3'>
                 <ContainerServices
                     photoLeft={foto9}
@@ -30,7 +30,7 @@ const Services = () => {
                     textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
                 />
             </div>
-            <ContactZone/>
+            <ContactZone />
             <Footer />
         </>
     )

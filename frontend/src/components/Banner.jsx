@@ -1,16 +1,17 @@
-import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import './Banner.css'
-import { BsWhatsapp } from 'react-icons/bs'
 import { FaMotorcycle, FaShuttleVan } from 'react-icons/fa'
 import { BsTruckFlatbed } from 'react-icons/bs'
 import { GiCarBattery } from 'react-icons/gi'
+import FormModal from './FormModal'
 
-const Banner = ({imgBack}) => {
+const Banner = ({ imgBack, express }) => {
+
+    
 
     return (
-        <section id='banner' style={{ textAlign: "center", color: "whitesmoke", backgroundImage:`url(${imgBack})` }}>
-            <div className='container-fluid w-100'>
+        <section id='banner' style={{ textAlign: "center", color: "whitesmoke", backgroundImage: `url(${imgBack})` }}>
+            {!express && <div className='container-fluid w-100'>
                 <div className='p-1'>
                     <h4>GUINCHOS SP 24 HORAS | 7 DIAS DA SEMANA</h4>
                     <h6>Equipe sempre a pronto atendimento!</h6>
@@ -21,28 +22,36 @@ const Banner = ({imgBack}) => {
                 <div id='menu-service'>
                     <ul style={{ listStyleType: "none", display: "flex", justifyContent: "center" }}>
                         <li>
-                            <Link to='/services'>
-                                <FaShuttleVan color='white' />
-                            </Link>
+                            <FormModal
+                                icon={<FaShuttleVan color='white'/>}
+                                text='Reboques de veiculos utilitários!'
+                                title='Utilitários'
+                            />
                         </li>
                         <li>
-                            <Link to='/services'>
-                                <FaMotorcycle color='white' />
-                            </Link>
+                            <FormModal
+                                icon={<FaMotorcycle color='white'/>}
+                                text='Reboques de veiculos utilitários!'
+                                title='Utilitários'
+                            />
                         </li>
                         <li>
-                            <Link to='/services'>
-                                <BsTruckFlatbed color='white' />
-                            </Link>
+                            <FormModal
+                                icon={<BsTruckFlatbed color='white'/>}
+                                text='Reboques de veiculos utilitários!'
+                                title='Utilitários'
+                            />
                         </li>
                         <li>
-                            <Link to='/services'>
-                                <GiCarBattery color='white' />
-                            </Link>
+                            <FormModal
+                                icon={<GiCarBattery color='white'/>}
+                                text='Reboques de veiculos utilitários!'
+                                title='Utilitários'
+                            />
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>}
         </section>
     )
 }

@@ -11,7 +11,7 @@ const Express = () => {
   return (
     <>
       <Navbar />
-      <Banner imgBack={imgBanner} />
+      <Banner imgBack={imgBanner} express = {true}/>
       <div className='py-md-3'>
         <ContainerServices
         photoLeft={foto9}
