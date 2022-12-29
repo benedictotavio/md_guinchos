@@ -5,9 +5,15 @@ import { BsTruckFlatbed } from 'react-icons/bs'
 import { GiCarBattery } from 'react-icons/gi'
 import FormModal from './FormModal'
 
-const Banner = ({ imgBack, express }) => {
+//Photos
+import fotoService1 from '../galeria-fotos/foto-1.png'
+import fotoService2 from '../galeria-fotos/foto-2.png'
+import fotoService3 from '../galeria-fotos/foto-3.png'
+import fotoService4 from '../galeria-fotos/foto-4.png'
+import fotoService5 from '../galeria-fotos/foto-5.png'
+import fotoService6 from '../galeria-fotos/foto-7.png'
 
-    
+const Banner = ({ imgBack, express }) => {
 
     return (
         <section id='banner' style={{ textAlign: "center", color: "whitesmoke", backgroundImage: `url(${imgBack})` }}>
@@ -23,28 +29,32 @@ const Banner = ({ imgBack, express }) => {
                     <ul style={{ listStyleType: "none", display: "flex", justifyContent: "center" }}>
                         <li>
                             <FormModal
-                                icon={<FaShuttleVan color='white'/>}
+                                img={fotoService1}
+                                icon={<FaShuttleVan color='white' />}
                                 text='Reboques de veiculos utilitários!'
                                 title='Utilitários'
                             />
                         </li>
                         <li>
                             <FormModal
-                                icon={<FaMotorcycle color='white'/>}
+                                img={fotoService2}
+                                icon={<FaMotorcycle color='white' />}
                                 text='Reboques de veiculos utilitários!'
                                 title='Utilitários'
                             />
                         </li>
                         <li>
                             <FormModal
-                                icon={<BsTruckFlatbed color='white'/>}
+                                img={fotoService4}
+                                icon={<BsTruckFlatbed color='white' />}
                                 text='Reboques de veiculos utilitários!'
                                 title='Utilitários'
                             />
                         </li>
                         <li>
                             <FormModal
-                                icon={<GiCarBattery color='white'/>}
+                                img={fotoService5}
+                                icon={<GiCarBattery color='white' />}
                                 text='Reboques de veiculos utilitários!'
                                 title='Utilitários'
                             />

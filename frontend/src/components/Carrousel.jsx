@@ -1,50 +1,32 @@
-import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../galeria-fotos/foto-1.png'
-import img2 from '../galeria-fotos/foto-2.png'
-import img3 from '../galeria-fotos/foto-3.png'
+import React from 'react'
+import Logo from '../imgs/logo_marcio.png'
+import Logo2 from '../imgs/logo_express.png'
+import './Carrousel.scss'
 
-function Carrousel() {
+const Carrousel = () => {
     return (
-        <section className='p-5' style={{ position: "static"}}>
-            <Carousel variant="dark">
-                <Carousel.Item>
-                    <img
-                        className="d-block w-50 mx-auto"
-                        src={img3}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h5 className='text-white'>Segurança</h5>
-                        <p className='text-white'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-50 mx-auto"
-                        src={img1}
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h5 className='text-white'>Agilidade</h5>
-                        <p className='text-white' >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-50 mx-auto"
-                        src={img2}
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h5 className='text-white'>24 Horas</h5>
-                        <p className='text-white'>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+        <section id='section-carrousel'>
+            <div className="container">
+                <div className="carousel">
+                    <div className="carousel__face img-fluid"><span>Segurança</span></div>
+                    <div className="carousel__face img-fluid"><span>Agilidade</span></div>
+                    <div className="carousel__face img-fluid"><span>Eficiencia</span></div>
+                    <div className="carousel__face img-fluid d-flex justify-content-center align-items-center">
+                        <i><img className='img-fluid' src={Logo} alt="" /></i>
+                    </div>
+                    <div className="carousel__face img-fluid"><span>Disponibilidade</span></div>
+                    <div className="carousel__face img-fluid"><span>24 Horas</span></div>
+                    <div className="carousel__face img-fluid"><span>Todos os Dias</span></div>
+                    <div className="carousel__face img-fluid"><span>Pronto Atendimento</span></div>
+                    <div className="carousel__face img-fluid d-flex justify-content-center align-items-center">
+                        <i>
+                            <img className='img-fluid' src={Logo2} alt="" />
+                        </i>
+                    </div>
+                </div>
+            </div>
         </section>
-    );
+    )
 }
 
-export default Carrousel;
+export default Carrousel

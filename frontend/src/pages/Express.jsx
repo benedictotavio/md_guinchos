@@ -6,11 +6,12 @@ import Navbar from '../components/Navbar'
 import imgBanner from '../imgs/banner_express.png'
 import ContainerServices from '../components/ContainerServices'
 import foto9 from '../galeria-fotos/foto-9.png'
+import imgLogo from '../imgs/logo_express.png'
 
 const Express = () => {
   return (
     <>
-      <Navbar />
+      <Navbar imgLogo={imgLogo}/>
       <Banner imgBack={imgBanner} express = {true}/>
       <div className='py-md-3'>
         <ContainerServices

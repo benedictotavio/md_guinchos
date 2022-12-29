@@ -1,5 +1,8 @@
 import React from 'react'
 import './ContainerServices.scss'
+import { BsWhatsapp } from 'react-icons/bs'
+import { MdOutlineAttachMoney } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRight, textRight, section }) => {
     return (
@@ -20,15 +23,19 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">{textLeft}</div>
                             <ul className="postcard__tagbox">
-                                <li className="tag__item"><i className="fas fa-tag mr-2"></i>Podcast</li>
-                                <li className="tag__item"><i className="fas fa-clock mr-2"></i>55 mins.</li>
-                                <li className="tag__item play blue">
-                                    <a href="#">
-                                        <i>
+                                <a href="http://wa.me/5511971181829" target='_blank'>
 
-                                        </i>
-                                    </a>
-                                </li>
+                                    <li className="tag__item_wpp">
+                                        <BsWhatsapp />
+                                        WhatssApp
+                                    </li>
+                                </a>
+                                <Link to='/contact'>
+                                    <li className="tag__item_cash">
+                                        <MdOutlineAttachMoney />
+                                        Orçamento
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                     </article>
@@ -46,11 +53,18 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">{textRight}</div>
                             <ul className="postcard__tagbox">
-                                <li className="tag__item"><i className="fas fa-tag mr-2"></i>Podcast</li>
-                                <li className="tag__item"><i className="fas fa-clock mr-2"></i>55 mins.</li>
-                                <li className="tag__item play red">
-                                    <a href="#"><i className="fas fa-play mr-2"></i>Play Episode</a>
-                                </li>
+                                <a href="http://wa.me/5511971181829" target='_blank'>
+                                    <li className="tag__item_wpp">
+                                        <BsWhatsapp />
+                                        WhatssApp
+                                    </li>
+                                </a>
+                                <Link to='/contact'>
+                                    <li className="tag__item_cash">
+                                        <MdOutlineAttachMoney />
+                                        Orçamento
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                     </article>

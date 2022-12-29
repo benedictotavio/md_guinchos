@@ -6,11 +6,12 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import foto9 from '../galeria-fotos/foto-9.png'
 import imgBanner from '../imgs/banner.png'
+import imgLogo from '../imgs/logo_marcio.png'
 
 const Services = () => {
     return (
         <>
-            <Navbar />
+            <Navbar imgLogo={imgLogo}/>
             <Banner imgBack={imgBanner} />
             <div className='py-3'>
                 <ContainerServices

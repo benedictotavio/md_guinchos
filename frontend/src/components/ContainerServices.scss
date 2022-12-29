@@ -42,7 +42,7 @@ a:hover {
 .postcard {
 	flex-wrap: wrap;
 	display: flex;
-
+	text-decoration: none;
 	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
 	border-radius: 10px;
 	margin: 0 0 2rem 0;
@@ -122,19 +122,44 @@ a:hover {
 		padding: 0;
 		justify-content: center;
 
-		.tag__item {
+		.tag__item_wpp
+		{
 			display: inline-block;
-			background: rgba(83, 83, 83, 0.4);
+			color: #e1e5ea;
+			background: #25D366;
 			border-radius: 3px;
-			padding: 2.5px 10px;
+			padding: 5.5px 10px;
 			margin: 0 5px 5px 0;
-			cursor: default;
+			cursor: pointer;
 			user-select: none;
+			font-size: 1.1em;
 			transition: background-color 0.3s;
 
 			&:hover {
-				background: rgba(83, 83, 83, 0.8);
+				background: rgba(253, 252, 252, 0.8);
+				color: #25D366;
 			}
+		}
+		.tag__item_cash{
+			display: inline-block;
+			color: #e1e5ea;
+			background: #7a7b7a;
+			border-radius: 3px;
+			padding: 5.5px 10px;
+			margin: 0 5px 5px 0;
+			cursor: pointer;
+			user-select: none;
+			font-size: 1.1em;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background: rgba(253, 252, 252, 0.8);
+				color: #191a19;
+			}
+		}
+		.tag__item svg{
+			margin: auto 2.5px;
+			font-size: 1.5em;
 		}
 	}
 

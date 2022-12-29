@@ -14,10 +14,9 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     maxWidth: '70%',
-    padding: '-20px!important',
+    padding: '-20px',
     borderRadius: '4.5px',
-    display: 'flex',
-    borderRadius: '10px'
+    borderRadius: '10px',
   },
 };
 
@@ -50,32 +49,30 @@ export default function FormModal({ icon, title, text, video, img }) {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div className=' h-25'>
-          <img src={img} alt="" />
+        <div id='window'>
+          <img className='img-fluid' src={img} alt="" />
         </div>
-        <div className=' h-25'>
+        <div className='content-modal h-25'>
           <h3>{title}</h3>
-          <div className='mt-md-5'>
+          <div className='container-md mt-md-5'>
             {text}
           </div>
-          <div className='mt-md-2 d-flex justify-content-around text-white'>
-            <div>
-              <button className='btn mx-md-1' style={{ backgroundColor: 'green' }}>
-                <a className='text-white' href="http://wa.me/5511971181829" target='_blank' style={{ textDecoration: 'none' }}>
+          <div className='mt-md-2 d-md-flex justify-content-around text-white'>
+            <div id='btn-zone'>
+                <a href="http://wa.me/5511971181829" target='_blank' style={{ textDecoration: 'none' }}>
                     <BsWhatsapp/>
                     WhatsApp
                 </a>
-              </button>
               <button className='btn btn-secondary' onClick={closeModal}>Fechar</button>
             </div>
-            <div className=' d-flex align-items-md-end'>
+          </div>
+          <div className=' d-md-flex justify-content-md-center'>
               <i>
                 <Link to='/express'>
                   <BsArrowRightCircle />
                 </Link>
               </i>
             </div>
-          </div>
         </div>
       </Modal>
     </>

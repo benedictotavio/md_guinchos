@@ -4,12 +4,12 @@ import Logo from '../imgs/logo_marcio.png'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 
-const Navbar = () => {
+const Navbar = ({imgLogo}) => {
     return (
         <section className='d-flex justify-content-md-around p-2'>
             <div className=''>
                 <Link to='/' className="navbar-brand p-3">
-                    <img src={Logo} alt="logo marcio guinchos" />
+                    <img src={imgLogo} alt="logo marcio guinchos" />
                 </Link>
             </div>
 
@@ -26,6 +26,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/services">Serviços</Link>
                             </li>
+                           
                             <li className="nav-item">
                                 <Link to='/contact' className="nav-link">Fale Conosco</Link>
                             </li>
