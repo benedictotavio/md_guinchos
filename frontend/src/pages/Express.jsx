@@ -17,7 +17,7 @@ const Express = () => {
         <ContainerServices
           photoLeft={foto9}
           titleLeft='Retirada de Residuos'
-          textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+          textLeft='Temos experiencia na retirada de residuos, desde uma tranportes de equipamentos até remoção de coleta seletiva em comercios, residencias e condominios.'
           photoRight={foto9}
           titleRight='Entrega de Materiais'
           textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
@@ -25,20 +25,19 @@ const Express = () => {
         <ContainerServices
           photoLeft={foto9}
           titleLeft='Fretes Terceirizados'
-          textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+          textLeft='Há mais de 15 anos no ramo, temos uma variada capacidade e treinamento com fretes, nossso motorista possuem treinamento e o equipamento nescessário para o transporte dos mais diversos materiais: ceramica, materias de obra, eletrodomésticos, moveis planejados e muito mais.'
           photoRight={foto9}
           titleRight='Retirada de Podas'
-          textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+          textRight='Após podar sua árvore precisa de um descarte, correto? trabalhando junto a uma equipe especializada fazemos a limpeza do ambiente de trabalho logo após o serviço de podagem ser finalizado.'
         />
         <ContainerServices
           photoLeft={foto9}
-          titleLeft='Resto de Obra'
-          textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+          titleLeft='Auxilio em Obras'
+          textLeft='Quando finalizar sua obra, fique tranquilo, nós da Md Guincho resolvemos o resto. Nosso serviço incluem: a retirada de entulho, limpeza após o encerramento da atividade, derrubagem de parede para inicio de obras e etc.'
           photoRight={foto9}
           titleRight='Mudanças'
-          textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+          textRight='Atrás de novos ares? A Md Guincho te ajuda com isso. Trabalhamos com caminhões altamente preparados e profissionais experientes, para transportar seus pertences com todo a qualidade e cuidade que eles merecem.'
         />
-        
       </div>
       <ContactZone />
       <Footer />
