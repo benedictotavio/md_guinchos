@@ -17,34 +17,34 @@ const Services = () => {
                 <ContainerServices
                     photoLeft={foto9}
                     titleLeft='Veiulos Pesados'
-                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textLeft='Trabalhamos com veiculos capacitados e uma equipe treinada, capazes de transportar veiculos pesados como: onibûs, micro-onibûs, caminhões, caminhonetes, carretas e etc.'
                     photoRight={foto9}
                     titleRight='Vans'
-                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textRight='Trabalhamos com veiculos capacitados e uma equipe treinada, capazes de transportar vans e diversos outros veiculos de transportes coletivos.'
                 />
                 <ContainerServices
                     photoLeft={foto9}
                     titleLeft='Auxiliar na Partida'
-                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textLeft='Seu carro desligou? Nossa equipe é formada por profissionais sempre a postos, com o preparo para auxiliar nos demais problemas elétricos do seu veiculo.'
                     photoRight={foto9}
                     titleRight='Utilitários'
-                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textRight='Trabalhamos com veiculos capacitados e uma equipe treinada, capazes de transportar veiculos utilitários como: caminhões, caminhonetes e pickups.'
                 />
                 <ContainerServices
                     photoLeft={foto9}
                     titleLeft='Troca de Pneus'
-                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textLeft='Seu pneu furou? Fique Tranquilo! Nossa equipe é formada por profissionais sempre a postos, com o preparo para auxiliar na entrega e troca de um novo pneu.'
                     photoRight={foto9}
                     titleRight='Motos'
-                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textRight='Trabalhamos com veiculos capacitados e uma equipe treinada, capazes de transportar motos de todos os tamanhos e cilindradas.'
                 />
                 <ContainerServices
                     photoLeft={foto9}
                     titleLeft='Guincho para equipamentos'
-                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textLeft='Trabalhamos com veiculos capacitados e uma equipe treinada, capazes de transportar os mais variados equipamentos como: empilhadeiras, food-trucks, maquinário de obra, motores e os mais diversos tipos de equipamentos.'
                     photoRight={foto9}
                     titleRight='Guincho para automóveis'
-                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    textRight='A Md Guincho está sempre preparada para auxiliar com o seu problema, nossa equipe esta em constante comunicação que permite um rapido contato e um atendimento ainda mais agíl.'
                 />
             </div>
             <ContactZone />
