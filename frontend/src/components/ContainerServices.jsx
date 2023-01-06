@@ -59,7 +59,7 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                                         WhatssApp
                                     </li>
                                 </a>
-                                <Link to='/contact'>
+                                <Link to='/contact' target='_blank'>
                                     <li className="tag__item_cash">
                                         <MdOutlineAttachMoney />
                                         Orçamento

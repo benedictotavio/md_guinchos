@@ -1,6 +1,4 @@
 section#banner {
-    background-color: #cccccc;
-    /* You must set a specified height */
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
@@ -14,14 +12,34 @@ section#banner {
     min-height: 50vh;
 }
 
-section#banner h3,h4,h7 {
+@media (max-width:770px) {
+    section#banner div#menu-service ul.list-service li:nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width:670px) {
+    section#banner div#menu-service ul.list-service li:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    section#banner div#menu-service {
+        display: none;
+    }
+}
+
+section#banner h3,
+h4,
+h7 {
     margin: auto 0 20px auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 13px;
 
 }
-section#banner h3.btn-number-wpp > a{
+
+section#banner h3.btn-number-wpp>a {
     color: #FFF;
     text-decoration: none;
     margin: 10px 0 20px auto;
@@ -30,7 +48,7 @@ section#banner h3.btn-number-wpp > a{
     text-shadow: 2.5px 2px 2.5px #25d366;
 }
 
-section#banner h3.btn-number-wpp > a:hover{
+section#banner h3.btn-number-wpp>a:hover {
     color: #25d366;
     text-shadow: 1px 2px 2px #FFF;
     transition: .45s;
@@ -46,7 +64,7 @@ section#banner div#menu-service ul a svg:hover {
     transform: scale(1.15);
 }
 
-section#banner div.btn-wpp a{
+section#banner div.btn-wpp a {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -60,14 +78,17 @@ section#banner div.btn-wpp a{
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
-section#banner div.btn-wpp a:hover{
+
+section#banner div.btn-wpp a:hover {
     background-color: #FFF;
 }
-section#banner div.btn-wpp a svg{
+
+section#banner div.btn-wpp a svg {
     margin: 5px;
     transition: 0.25s;
 }
-section#banner div.btn-wpp a svg:hover{
+
+section#banner div.btn-wpp a svg:hover {
     color: #25d366;
     transform: scale(1.15);
 }

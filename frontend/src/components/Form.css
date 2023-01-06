@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,100&display=swap');
 
+
+:root {
+    --form-blue: #77c7fd
+}
+
 section#form {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,7 +18,6 @@ section#form button {
     font-family: "Montserrat-Regular", sans-serif;
     color: #fff;
     font-size: 15px;
-    background-color: hsla(0, 0%, 100%, 0);
 }
 
 div.inner p,
@@ -48,17 +52,31 @@ section#form .wrapper {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url("../imgs/bg-registration-form-7.jpg") no-repeat;
-    background-size: cover;
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+@media(max-width:350px){
+    section#form .inner{
+        padding: 0;
+    }
 }
 
 section#form .inner {
-    max-width: 758px;
-    margin: auto;
-    background: #39459b;
-    border: 10px solid #0d99d7;
+    width: calc(100% - 50px);
+    height: 95vh;
+    margin:5px auto;
+    background-color: rgba(255, 0, 0, alpha);
+    border: 10px solid var(--form-blue);
     border-start-start-radius: 60px;
-    padding: 77px 99px 87px;
+    padding: 10px 19px 17px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -72,14 +90,14 @@ section#form textarea {
 
 section#form div.inner h3 {
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 12px;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    text-shadow: 1.5px 2px 1.5px black;
+    color: #6a6fbe;
+    text-shadow: 3.5px 2px 3.5px black;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 section#form div.inner p {
@@ -118,8 +136,9 @@ section#form div.inner .form-group span {
 }
 
 section#form div.inner .form-control {
+    color: #fff;
     border: none;
-    border-bottom: 2px solid #00ade6;
+    border-bottom: 2px solid var(--form-blue);
     display: block;
     width: 100%;
     height: 43px;
@@ -144,6 +163,7 @@ section#form div.inner .form-control:valid+span+.border {
 }
 
 section#form div.inner textarea.form-control {
+    color: #fff;
     min-height: 10vh;
     padding: 15px auto;
 }
@@ -161,7 +181,7 @@ section#form div.inner button {
     justify-content: center;
     padding: 0;
     background: none;
-    color: #fff;
+    color: var(--form-blue);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -222,7 +242,7 @@ section#form div.inner button:hover i {
 
 @media (max-width: 767px) {
     section#form div.inner h3 {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     section#form p {
@@ -231,17 +251,21 @@ section#form div.inner button:hover i {
     }
 
     section#form .inner {
-        padding: 27px 20px 37px;
-        border: none;
+        height: 100vh;
         box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         -o-box-shadow: none;
     }
+}
 
-    section#form .wrapper {
-        background: #39459b;
-        border: 10px solid #0d99d7;
+@media (max-width:768px) {
+    section#form .wrapper div.contact-form>div.icon-contact img {
+        display: none;
+    }
+
+    section#form .wrapper div.contact-form {
+        display: block;
     }
 }

@@ -11,12 +11,20 @@ import imgLogo from '../imgs/logo_marcio.png'
 const Services = () => {
     return (
         <>
-            <Navbar imgLogo={imgLogo}/>
+            <Navbar imgLogo={imgLogo} />
             <Banner imgBack={imgBanner} />
             <div className='py-3'>
                 <ContainerServices
                     photoLeft={foto9}
-                    titleLeft='Utilitários'
+                    titleLeft='Veiulos Pesados'
+                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    photoRight={foto9}
+                    titleRight='Vans'
+                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                />
+                <ContainerServices
+                    photoLeft={foto9}
+                    titleLeft='Auxiliar na Partida'
                     textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
                     photoRight={foto9}
                     titleRight='Utilitários'
@@ -24,10 +32,18 @@ const Services = () => {
                 />
                 <ContainerServices
                     photoLeft={foto9}
-                    titleLeft='Utilitários'
+                    titleLeft='Troca de Pneus'
                     textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
                     photoRight={foto9}
-                    titleRight='Utilitários'
+                    titleRight='Motos'
+                    textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                />
+                <ContainerServices
+                    photoLeft={foto9}
+                    titleLeft='Guincho para equipamentos'
+                    textLeft='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
+                    photoRight={foto9}
+                    titleRight='Guincho para automóveis'
                     textRight='O ideal é que façamos testes específicos de texto para avaliar a clareza dos nossos conteúdos, mas sejamos realistas, vai. É fato que, às vezes, não temos verba ou tempo suficiente pra testarmos dessa forma. Por isso, sempre que for possível, é bom pegar carona nos testes de usabilidade (que são mais comuns nas empresas).'
                 />
             </div>

@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Navbar = ({imgLogo}) => {
     return (
-        <section className='d-flex justify-content-md-around p-2'>
+        <section className='d-flex justify-content-around p-2'>
             <div className=''>
                 <Link to='/' className="navbar-brand p-3">
                     <img src={imgLogo} alt="logo marcio guinchos" />
@@ -31,7 +31,7 @@ const Navbar = ({imgLogo}) => {
                                 <Link to='/contact' className="nav-link">Fale Conosco</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/express'>Transporte de Cargas</Link>
+                                <Link className="nav-link" to='/express'>Marcio Express</Link>
                             </li>
                         </ul>
                     </div>
