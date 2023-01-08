@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Flags from '../imgs/flags.png'
-import SocialIcons from './SocialIcons'
 import { Link } from 'react-router-dom'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
@@ -62,7 +61,7 @@ const Footer = ({ form }) => {
                                                                 <li className="list-group-item">Motos</li>
                                                                 <li className="list-group-item">
                                                                     <Link to='/services' style={{ textDecoration: 'none' }}>
-                                                                        Veja todos nossos serviços <BsFillArrowRightCircleFill/>
+                                                                        Veja todos nossos serviços <BsFillArrowRightCircleFill />
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -75,8 +74,8 @@ const Footer = ({ form }) => {
                                                                 <li className="list-group-item">Mudanças</li>
                                                                 <li className="list-group-item">Fretes Terçeirizados</li>
                                                                 <li className="list-group-item">
-                                                                    <Link to='/express' target='_blank'>
-                                                                        Marcio Express 
+                                                                    <Link to='/express' target='_blank' style={{ textDecoration: 'none' }}>
+                                                                        Marcio Express <BsFillArrowRightCircleFill />
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -97,7 +96,7 @@ const Footer = ({ form }) => {
 
                                     <div>
                                         <h2
-                                            style={{textShadow:'1px 1px 2px white'}}
+                                            style={{ textShadow: '1px 1px 2px white' }}
                                             className=" text-dark footer-heading footer-heading-white text-center">
                                             Fale Conosco
                                         </h2>
@@ -153,8 +152,8 @@ const Footer = ({ form }) => {
                                             <li className="list-group-item">Mudanças</li>
                                             <li className="list-group-item">Fretes Terçeirizados</li>
                                             <li className="list-group-item">
-                                                <Link to='/express' target='_blank'>
-                                                    Marcio Express
+                                                <Link to='/express' target='_blank' style={{ textDecoration: 'none' }}>
+                                                    Marcio Express <BsFillArrowRightCircleFill />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -163,11 +162,6 @@ const Footer = ({ form }) => {
                             </>}
                         <div className="col-md-12 d-flex justify-content-center img-fluid">
                             <img src={Flags} alt="Bandeiras aceitas!" style={{ maxWidth: '100%', margin: '1% auto' }} />
-                        </div>
-                        <div className='col-md-12 d-flex justify-content-center'>
-                            <div>
-                                <SocialIcons />
-                            </div>
                         </div>
                     </div>
                 </div>

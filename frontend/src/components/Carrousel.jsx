@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Logo from '../imgs/logo_marcio.png'
 import Logo2 from '../imgs/logo_express.png'
-import img15 from '../galeria-fotos/foto-15.png'
-import img9 from '../galeria-fotos/foto-9.png'
-import img10 from '../galeria-fotos/foto-10.png'
-import img19 from '../galeria-fotos/foto-19.jpeg'
 import './Carrousel.css'
 
+// Media Home
+import img4 from '../galeria-fotos-express/foto-4.jpg'
+import img25 from '../galeria-fotos-guincho/foto-25.jpg'
+import img26 from '../galeria-fotos-guincho/foto-26.jpg'
+import img27 from '../galeria-fotos-guincho/foto-27.jpg'
+import img28 from '../galeria-fotos-guincho/foto-28.jpg'
 const Carrousel = () => {
     return (
         <>
@@ -18,7 +20,7 @@ const Carrousel = () => {
                         <div className="cards-wrapper">
                             <div className="card">
                                 <div className="image-wrapper  d-flex justify-content-center align-items-center">
-                                    <img src={Logo2} alt="..." />
+                                    <img src={img4} alt="..." />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Marcio Express</h5>
@@ -30,7 +32,7 @@ const Carrousel = () => {
                             </div>
                             <div className="card">
                                 <div className="image-wrapper">
-                                    <img src={img15} alt="..." />
+                                    <img src={img25} alt="..." />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">24 Horas</h5>
@@ -41,7 +43,7 @@ const Carrousel = () => {
                             </div>
                             <div className="card">
                                 <div className="image-wrapper">
-                                    <img src={img10} alt="..." />
+                                    <img src={img26} alt="..." />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Solicite orçamento</h5>
@@ -57,7 +59,7 @@ const Carrousel = () => {
                         <div className="cards-wrapper">
                             <div className="card">
                                 <div className="image-wrapper">
-                                    <img src={img9} alt="..." />
+                                    <img src={img27} alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -70,7 +72,7 @@ const Carrousel = () => {
                             </div>
                             <div className="card">
                                 <div className="image-wrapper">
-                                    <img src={img19} alt="..." />
+                                    <img src={img28} alt="..." />
 
                                 </div>
                                 <div className="card-body">

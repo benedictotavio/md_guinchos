@@ -30,13 +30,14 @@ function App() {
         })
             .then(response => response.json())
             .catch(err => console.log(err))
+            window.alert('Mensagem enviada com sucesso!')
 
         setInterval(() => {
             setName('')
             setEmail('')
             setTel('')
             setMsg('')
-        }, 800)
+        }, 600)
     }
 
 
