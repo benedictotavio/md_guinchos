@@ -39,7 +39,7 @@ function App() {
             setEmail('')
             setTel('')
             setMsg('')
-        }, 600)
+        }, 650)
     }
 
 
