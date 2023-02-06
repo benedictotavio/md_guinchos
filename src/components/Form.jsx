@@ -23,14 +23,16 @@ function App() {
             msg,
         }
 
-        await fetch('/api/forma', {
+        const url = 'https://api-md-guincho-form.herokuapp.com'
+
+        await fetch(url + '/api/forma', {
             method: "POST",
             body: JSON.stringify(_data),
             headers: { "Content-type": "application/json; charset=UTF-8" }
         })
             .then(response => response.json())
             .catch(err => console.log(err))
-            window.alert('Mensagem enviada com sucesso!')
+        window.alert('Mensagem enviada com sucesso!')
 
         setInterval(() => {
             setName('')
