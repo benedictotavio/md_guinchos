@@ -22,7 +22,7 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">{textLeft}</div>
                             <ul className="postcard__tagbox">
-                                <a href="http://wa.me/5511971181829" target='_blank'>
+                                <a href="http://wa.me/5511971181829" target='_blank' rel="noreferrer">
                                     <li className="tag__item_wpp">
                                         <BsWhatsapp />
                                         WhatssApp
@@ -50,7 +50,7 @@ const ContainerServices = ({ photoLeft, titleLeft, textLeft, photoRight, titleRi
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">{textRight}</div>
                             <ul className="postcard__tagbox">
-                                <a href="http://wa.me/5511971181829" target='_blank'>
+                                <a href="http://wa.me/5511971181829" target='_blank' rel="noreferrer">
                                     <li className="tag__item_wpp">
                                         <BsWhatsapp />
                                         WhatssApp

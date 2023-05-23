@@ -1,3 +1,10 @@
+div#carouselExampleControls{
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 div#carouselExampleControls .card {
 	border: none;
 	border-radius: 0;
@@ -9,9 +16,6 @@ div#carouselExampleControls .card-title{
 	text-shadow: 1.5px 1.5px 1.5px #5b95be;
 }
 
-div#carouselExampleControls .carousel-inner {
-	padding: 1em;
-}
 div#carouselExampleControls .carousel-control-prev,
 div#carouselExampleControls .carousel-control-next {
 	background-color: #e1e1e1;

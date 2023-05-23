@@ -16,7 +16,7 @@ const ContactZone = () => {
     return (
         <div id='contacts'>
             <div className="wrapper">
-                <a className={`social ${hide ? 'hide':''}`} href="http://wa.me/5511971181829" target='_blank'>
+                <a className={`social ${hide ? 'hide':''}`} href="http://wa.me/5511971181829" target='_blank' rel="noreferrer">
                     <i>
                         <FaWhatsapp/>
                     </i>

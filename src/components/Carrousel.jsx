@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Logo from '../imgs/logo_marcio.png'
-import Logo2 from '../imgs/logo_express.png'
 import './Carrousel.css'
 
 // Media Home

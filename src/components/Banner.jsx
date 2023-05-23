@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.css'
-import {BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 
 
 
@@ -14,7 +14,7 @@ const Banner = ({ imgBack, express }) => {
                     <h4>GUINCHOS SP - 24 HORAS | 7 DIAS DA SEMANA</h4>
                     <h6>Equipe sempre a pronto atendimento!</h6>
                     <h3 className='btn-number-wpp'>
-                        <a href="http://wa.me/5511971181829" target='_blank'><BsWhatsapp/> (11)97380-0547</a>
+                        <a href="http://wa.me/5511971181829" target='_blank' rel="noreferrer"><BsWhatsapp /> (11)97380-0547</a>
                     </h3>
                 </div>
             </div>}
